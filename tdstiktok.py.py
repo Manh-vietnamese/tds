@@ -165,7 +165,8 @@ if check_log == 'success':
                     uid = job['id']
                     link = job['link']
                     sleep(1)
-                    os.system(f"termux-open-url {link}")
+                    #os.system(f"termux-open-url {link}")
+                    os.system(f"start chrome {LINK}")
                     check_duyet = duyet_job(type_duyet, token_tds, uid)
                     if check_duyet != 'error':
                         dem_tong += 1
